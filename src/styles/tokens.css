@@ -1,0 +1,77 @@
+/**
+ * Design tokens.
+ *
+ * A restrained, financial palette: deep navy carries the brand, neutrals do
+ * the work, and colour is reserved for meaning. Semantic colours are used
+ * sparingly and are never the only signal - every status also carries a label.
+ */
+
+:root {
+  /* Brand */
+  --navy-900: #0b1c33;
+  --navy-800: #12294a;
+  --navy-700: #1b3a63;
+  --navy-600: #27507f;
+  --navy-500: #3a6ba5;
+  --navy-100: #e5edf7;
+  --navy-50: #f2f6fb;
+
+  /* Neutrals */
+  --ink: #101826;
+  --ink-muted: #4a5768;
+  /* Chosen to clear WCAG AA (4.5:1) against every background in this palette,
+     including the canvas - verified with axe. */
+  --ink-subtle: #5c6878;
+  --line: #dfe4ec;
+  --line-strong: #c6cedb;
+  --surface: #ffffff;
+  --surface-sunken: #f6f8fb;
+  --canvas: #f0f3f8;
+
+  /* Semantic - restrained by design */
+  --positive: #1f6f4a;
+  --positive-soft: #e8f3ed;
+  --caution: #8a5a10;
+  --caution-soft: #fbf1df;
+  --warning: #a3342a;
+  --warning-soft: #fbeceb;
+  --neutral-soft: var(--navy-100);
+
+  /* Type */
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-xs: 0.78rem;
+  --text-sm: 0.88rem;
+  --text-base: 1rem;
+  --text-lg: 1.13rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.7rem;
+  --text-3xl: 2.1rem;
+
+  /* Space */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+
+  --radius: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(16, 24, 38, 0.06), 0 1px 3px rgba(16, 24, 38, 0.04);
+  --shadow: 0 4px 16px rgba(16, 24, 38, 0.07);
+
+  --max-width: 44rem;
+}
+
+/* Respect a user's reduced-motion preference across the whole journey. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

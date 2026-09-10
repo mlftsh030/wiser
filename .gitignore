@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+.env
+.env.local
+
+# Collected assessment data - never commit customer data, even test data.
+data/
+
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
